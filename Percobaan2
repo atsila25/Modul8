@@ -1,0 +1,69 @@
+package Percobaan;
+import javax.swing.*;
+class Percobaan2 extends JFrame{
+    JTextArea text = new JTextArea();
+    JButton angka = new JButton("1");
+    JButton angka1 = new JButton("2");
+    JButton angka2 = new JButton("3");
+    JButton  angka3 = new JButton("4");
+    JButton angka4 = new JButton("5");
+    JButton angka5 = new JButton("6");
+    JButton angka6 = new JButton("7");
+    JButton angka7 = new JButton("8");
+    JButton angka8 = new JButton("9");
+    JButton bt = new JButton("+");
+    JButton bt1 = new JButton("-");
+    JButton bt2 = new JButton("*");
+    JButton bt3 = new JButton("/");
+    JButton bt4 = new JButton("=");    
+    JButton bt5 = new JButton("C");
+    JButton bt6 = new JButton("0");
+    Percobaan2(){
+        setTitle("Design Preview");
+        setLocation(600, 200);
+        setSize(240, 260);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    void objek(){
+        getContentPane().setLayout(null);
+        getContentPane().add(text);
+        text.setBounds(5, 15, 210, 25);
+        getContentPane().add(angka);
+        angka.setBounds(5, 50, 45, 30);
+        getContentPane().add(angka1);
+        angka1.setBounds(60, 50, 45, 30);        
+        getContentPane().add(angka2);
+        angka2.setBounds(115, 50, 45, 30);        
+        getContentPane().add(angka3);
+        angka3.setBounds(5, 90, 45, 30);        
+        getContentPane().add(angka4);
+        angka4.setBounds(60, 90, 45, 30);        
+        getContentPane().add(angka5);
+        angka5.setBounds(115, 90, 45, 30);        
+        getContentPane().add(angka6);
+        angka6.setBounds(5, 130, 45, 30);        
+        getContentPane().add(angka7);
+        angka7.setBounds(60, 130, 45, 30);        
+        getContentPane().add(angka8);    
+        angka8.setBounds(115, 130, 45, 30);        
+        getContentPane().add(bt);
+        bt.setBounds(170, 50, 45, 30);
+        getContentPane().add(bt1);
+        bt1.setBounds(170, 90, 45, 30);
+        getContentPane().add(bt2);
+        bt2.setBounds(170, 130, 45, 30);
+        getContentPane().add(bt3);
+        bt3.setBounds(170, 170, 45, 30);        
+        getContentPane().add(bt4);
+        bt4.setBounds(115, 170, 45, 30);
+        getContentPane().add(bt5);
+        bt5.setBounds(60, 170, 45, 30);
+        getContentPane().add(bt6);   
+        bt6.setBounds(5, 170, 45, 30);
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        Percobaan2 cetak = new Percobaan2();
+        cetak.objek();
+    }
+}
