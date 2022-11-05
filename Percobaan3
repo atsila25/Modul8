@@ -1,0 +1,42 @@
+package Pendahluan;
+import javax.swing.*;
+import java.awt.*;
+class P3 extends JFrame{
+    Label first = new Label ("Masukkan Angka Pertama :");
+    Label second = new Label("Masukkan Angka Kedua :");
+    Label firstt = new Label ("Masukkan Angka Pertama :");
+    TextField tfi = new TextField(15);
+    TextField tfie = new TextField(15);
+    TextField tfield = new TextField(15);    
+    JButton bt1 = new JButton("+");
+    JButton bt2 = new JButton("-");
+    JButton bt3 = new JButton("*");
+    JButton bt4 = new JButton("/");
+P3(){
+    super ("Design");
+    setSize(190, 300);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setVisible(true);
+}
+void Input(){
+    setLayout(new FlowLayout());
+    add(first);
+    add(tfi);
+    add(second);
+    add(tfie);
+    add(firstt);
+    add(tfield);
+    getContentPane().add(bt1);
+    bt1.setBounds(10, 180, 40, 30);
+    getContentPane().add(bt2);
+    bt2.setBounds(70, 180, 40, 30);
+    getContentPane().add(bt3);
+    bt3.setBounds(110, 180, 40, 30);
+    getContentPane().add(bt4);
+    bt4.setBounds(70, 210, 40, 30);
+}
+    public static void main(String[] args) {
+        P3 pd = new P3();
+        pd.Input();
+    }
+}
